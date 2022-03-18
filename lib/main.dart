@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
               secondary: Colors.amber,
             ),
         textTheme: ThemeData.light().textTheme.copyWith(
-              headline6: const TextStyle(fontSize: 20),
+              headline6:
+                  const TextStyle(fontFamily: 'RobotoCondensed', fontSize: 20),
             ),
       ),
       routes: {
