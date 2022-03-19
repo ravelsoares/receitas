@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:receitas/models/category.dart';
-
 enum Complexity {
   Simple,
   Medium,
