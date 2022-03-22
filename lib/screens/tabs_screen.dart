@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:receitas/components/main_drawer.dart';
 import 'package:receitas/screens/categories_screen.dart';
 import 'package:receitas/screens/favorite_screen.dart';
 
@@ -33,6 +34,7 @@ class _TabScreenState extends State<TabScreen> {
         title: Text(_titles[_selectedScreenIndex]),
         centerTitle: true,
       ),
+      drawer: const MainDrawer(),
       body: _screens[_selectedScreenIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,
@@ -40,7 +42,7 @@ class _TabScreenState extends State<TabScreen> {
         selectedItemColor: Theme.of(context).colorScheme.secondary,
         currentIndex: _selectedScreenIndex,
         onTap: _selectScreen,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.category,
