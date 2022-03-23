@@ -50,8 +50,10 @@ class _MyAppState extends State<MyApp> {
               secondary: Colors.amber,
             ),
         textTheme: ThemeData.light().textTheme.copyWith(
-              headline6:
-                  const TextStyle(fontFamily: 'RobotoCondensed', fontSize: 20),
+              headline6: const TextStyle(
+                  fontFamily: 'RobotoCondensed',
+                  fontSize: 20,
+                  color: Colors.black),
             ),
       ),
       routes: {
